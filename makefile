@@ -234,3 +234,13 @@ b8-141:
 	g++ -c ./StringPermutation/b8-141.cpp -o ./lib/b8-141.o
 	g++ ./lib/b8-141.o -o ./bin/b8-141
 	./bin/b8-141
+
+b9-144:
+	g++ -c ./DiagonalMatrix/b9-144.cpp -o ./lib/b9-144.o
+	g++ ./lib/b9-144.o -o ./bin/b9-144
+	./bin/b9-144
+
+b9-145:
+	g++ -c ./ClassForMatrix/b9-145.cpp -o ./lib/b9-145.o
+	g++ ./lib/b9-145.o -o ./bin/b9-145
+	./bin/b9-145
