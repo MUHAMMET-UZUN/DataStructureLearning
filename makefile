@@ -244,3 +244,13 @@ b9-145:
 	g++ -c ./ClassForMatrix/b9-145.cpp -o ./lib/b9-145.o
 	g++ ./lib/b9-145.o -o ./bin/b9-145
 	./bin/b9-145
+
+b9-149:
+	g++ -c ./LowerTriangularMatrixInC/b9-149.cpp -o ./lib/b9-149.o
+	g++ ./lib/b9-149.o -o ./bin/b9-149
+	./bin/b9-149
+
+b9-150:
+	g++ -c ./LowerTriangularMatrixInCpp/b9-150.cpp -o ./lib/b9-150.o
+	g++ ./lib/b9-150.o -o ./bin/b9-150
+	./bin/b9-150
