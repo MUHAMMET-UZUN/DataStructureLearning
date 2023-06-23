@@ -254,3 +254,23 @@ b9-150:
 	g++ -c ./LowerTriangularMatrixInCpp/b9-150.cpp -o ./lib/b9-150.o
 	g++ ./lib/b9-150.o -o ./bin/b9-150
 	./bin/b9-150
+
+b9-156:
+	g++ -c ./MenuDrivenMatrix/b9-156.cpp -o ./lib/b9-156.o
+	g++ ./lib/b9-156.o -o ./bin/b9-156
+	./bin/b9-156
+
+b10-162:
+	g++ -c ./SparseMatrixC/b10-162.cpp -o ./lib/b10-162.o
+	g++ ./lib/b10-162.o -o ./bin/b10-162
+	./bin/b10-162
+
+b10-165:
+	g++ -c ./SparseMatrixCpp/b10-165.cpp -o ./lib/b10-165.o
+	g++ ./lib/b10-165.o -o ./bin/b10-165
+	./bin/b10-165
+
+b10-170:
+	g++ -c ./Polynomial/b10-170.cpp -o ./lib/b10-170.o
+	g++ ./lib/b10-170.o -o ./bin/b10-170
+	./bin/b10-170
