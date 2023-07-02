@@ -274,3 +274,18 @@ b10-170:
 	g++ -c ./Polynomial/b10-170.cpp -o ./lib/b10-170.o
 	g++ ./lib/b10-170.o -o ./bin/b10-170
 	./bin/b10-170
+
+b11-175:
+	g++ -c ./LinkedList/b11-175.cpp -o ./lib/b11-175.o
+	g++ ./lib/b11-175.o -o ./bin/b11-175
+	./bin/b11-175
+
+b11-185:
+	g++ -c ./SearchingInLinkedList/b11-185.cpp -o ./lib/b11-185.o
+	g++ ./lib/b11-185.o -o ./bin/b11-185
+	./bin/b11-185
+
+b11-187:
+	g++ -c ./InsertingInLinkedList/b11-187.cpp -o ./lib/b11-187.o
+	g++ ./lib/b11-187.o -o ./bin/b11-187
+	./bin/b11-187
