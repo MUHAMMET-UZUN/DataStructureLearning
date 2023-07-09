@@ -161,13 +161,167 @@ void Insert(struct Node *p, int index, int x)
     }
 }
 
+void SortedInsert(struct Node *p, int x)
+{
+    struct Node *t, *q = NULL;
+    t = (struct Node *)malloc(sizeof(struct Node));
+    t->data = x;
+    t->next = NULL;
+
+    if (first == NULL)
+        first = t;
+    else
+    {
+        while (p && p->data < x)
+        {
+            q = p;
+            p = p->next;
+        }
+
+        if (p == first)
+        {
+            t->next = first;
+            first = t;
+        }
+        else
+        {
+            t->next = q->next;
+            q->next = t;
+        }
+    }
+}
+
+int Delete(struct Node *p, int index)
+{
+    struct Node *q = NULL;
+    int i;
+    int x = -1;
+
+    if (index < 1 || index > Count(p))
+        return -1;
+    if (index == 1)
+    {
+        q = first;
+        x = first->data;
+        first = first->next;
+        free(q);
+        return x;
+    }
+    else
+    {
+        for (i = 0; i < index - 1; i++)
+        {
+            q = p;
+            p = p->next;
+        }
+        q->next = p->next;
+        x = p->data;
+        free(p);
+        return x;
+    }
+}
+
+int isSorted(struct Node *p)
+{
+    int i, x = -32768;
+
+    while (p)
+    {
+        if (p->data < x)
+            return 0;
+        x = p->data;
+        p = p->next;
+    }
+    return 1;
+}
+
+void DeleteDuplicates(struct Node *p)
+{
+    struct Node *q = p->next;
+    while (q)
+    {
+        if (p->data != q->data)
+        {
+            p = q;
+            q = q->next;
+        }
+        else
+        {
+            p->next = q->next;
+            free(q);
+            q = p->next;
+        }
+    }
+}
+
+void Reverse1(struct Node *p)
+{
+    int *A, i = 0;
+    struct Node *q = p;
+    A = (int *)malloc(sizeof(int) * Count(p));
+
+    while (q)
+    {
+        A[i] = q->data;
+        q = q->next;
+        i++;
+    }
+    q = p;
+    i--;
+    while (q)
+    {
+        q->data = A[i];
+        q = q->next;
+        i--;
+    }
+}
+
+void Reverse2(struct Node *p)
+{
+    struct Node *q = NULL, *r = NULL;
+
+    while (p)
+    {
+        r = q;
+        q = p;
+        p = p->next;
+        q->next = r;
+    }
+    first = q;
+}
+
+void Reverse3(struct Node *q, struct Node *p)
+{
+    if (p)
+    {
+        Reverse3(p, p->next);
+        p->next = q;
+    }
+    else
+        first = q;
+}
+
+void ReverseElements(struct Node *p)
+{
+    struct Node *q = NULL, *r = NULL;
+
+    while (p)
+    {
+        r = q;
+        q = p;
+        p = p->next;
+        q->next = r;
+    }
+    first = q;
+}
+
 int main()
 {
-    struct Node *temp;
-    int A[] = {3, 5, 7};
-    Create(A, 3);
-    Insert(first,3,10);
+    int A[] = {10, 20, 20, 20, 30, 40, 40, 50};
+    Create(A, 8);
     Display(first);
-
+    Reverse3(NULL,first);
+    Display(first);
+    printf("\n\n");
     return 0;
 }

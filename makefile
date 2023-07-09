@@ -289,3 +289,28 @@ b11-187:
 	g++ -c ./InsertingInLinkedList/b11-187.cpp -o ./lib/b11-187.o
 	g++ ./lib/b11-187.o -o ./bin/b11-187
 	./bin/b11-187
+
+b11-191:
+	g++ -c ./InsertInSortedLinkedList/b11-191.cpp -o ./lib/b11-191.o
+	g++ ./lib/b11-191.o -o ./bin/b11-191
+	./bin/b11-191
+
+b11-193:
+	g++ -c ./DeleteFromLinkedList/b11-193.cpp -o ./lib/b11-193.o
+	g++ ./lib/b11-193.o -o ./bin/b11-193
+	./bin/b11-193
+
+b11-195:
+	g++ -c ./CheckSortedLinkedList/b11-195.cpp -o ./lib/b11-195.o
+	g++ ./lib/b11-195.o -o ./bin/b11-195
+	./bin/b11-195
+
+b11-197:
+	g++ -c ./RemoveDuplicateLinkedList/b11-197.cpp -o ./lib/b11-197.o
+	g++ ./lib/b11-197.o -o ./bin/b11-197
+	./bin/b11-197
+
+b11-201:
+	g++ -c ./ReverseLinkedList/b11-201.cpp -o ./lib/b11-201.o
+	g++ ./lib/b11-201.o -o ./bin/b11-201
+	./bin/b11-201
