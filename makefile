@@ -349,3 +349,8 @@ b11-216:
 	g++ -c ./DoublyLinkedList/b11-216.cpp -o ./lib/b11-216.o
 	g++ ./lib/b11-216.o -o ./bin/b11-216
 	./bin/b11-216
+
+b11-218:
+	g++ -c ./InsertDoublyLinkedList/b11-218.cpp -o ./lib/b11-218.o
+	g++ ./lib/b11-218.o -o ./bin/b11-218
+	./bin/b11-218
