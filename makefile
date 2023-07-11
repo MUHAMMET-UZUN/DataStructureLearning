@@ -359,3 +359,8 @@ b11-220:
 	g++ -c ./DeleteDoublyLinkedList/b11-220.cpp -o ./lib/b11-220.o
 	g++ ./lib/b11-220.o -o ./bin/b11-220
 	./bin/b11-220
+
+b11-222:
+	g++ -c ./ReverseDoublyLinkedList/b11-222.cpp -o ./lib/b11-222.o
+	g++ ./lib/b11-222.o -o ./bin/b11-222
+	./bin/b11-222
