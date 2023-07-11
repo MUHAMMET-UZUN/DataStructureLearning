@@ -314,3 +314,38 @@ b11-201:
 	g++ -c ./ReverseLinkedList/b11-201.cpp -o ./lib/b11-201.o
 	g++ ./lib/b11-201.o -o ./bin/b11-201
 	./bin/b11-201
+
+b11-204:
+	g++ -c ./MergingSortedLinkedList/b11-204.cpp -o ./lib/b11-204.o
+	g++ ./lib/b11-204.o -o ./bin/b11-204
+	./bin/b11-204
+
+b11-206:
+	g++ -c ./CheckLoopLinkedList/b11-206.cpp -o ./lib/b11-206.o
+	g++ ./lib/b11-206.o -o ./bin/b11-206
+	./bin/b11-206
+
+b11-207:
+	g++ -c ./ClassLinkedList/b11-207.cpp -o ./lib/b11-207.o
+	g++ ./lib/b11-207.o -o ./bin/b11-207
+	./bin/b11-207
+
+b11-210:
+	g++ -c ./CircularLinkedList/b11-210.cpp -o ./lib/b11-210.o
+	g++ ./lib/b11-210.o -o ./bin/b11-210
+	./bin/b11-210
+
+b11-212:
+	g++ -c ./InsertingCircularLinkedList/b11-212.cpp -o ./lib/b11-212.o
+	g++ ./lib/b11-212.o -o ./bin/b11-212
+	./bin/b11-212
+
+b11-214:
+	g++ -c ./DeletingCircularLinkedList/b11-214.cpp -o ./lib/b11-214.o
+	g++ ./lib/b11-214.o -o ./bin/b11-214
+	./bin/b11-214
+
+b11-216:
+	g++ -c ./DoublyLinkedList/b11-216.cpp -o ./lib/b11-216.o
+	g++ ./lib/b11-216.o -o ./bin/b11-216
+	./bin/b11-216
