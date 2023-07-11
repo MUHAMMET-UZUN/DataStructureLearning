@@ -354,3 +354,8 @@ b11-218:
 	g++ -c ./InsertDoublyLinkedList/b11-218.cpp -o ./lib/b11-218.o
 	g++ ./lib/b11-218.o -o ./bin/b11-218
 	./bin/b11-218
+
+b11-220:
+	g++ -c ./DeleteDoublyLinkedList/b11-220.cpp -o ./lib/b11-220.o
+	g++ ./lib/b11-220.o -o ./bin/b11-220
+	./bin/b11-220
